@@ -14,15 +14,20 @@
             box-sizing: border-box;
         }
 
+        html {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            height: 100%;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            overflow: hidden;
             position: relative;
+            padding: 40px 20px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         /* Floating hearts background */
@@ -57,11 +62,13 @@
             z-index: 10;
             text-align: center;
             padding: 40px;
+            padding-bottom: 60px;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             max-width: 500px;
             width: 90%;
+            margin: 0 auto;
             transition: all 0.3s ease;
         }
 
@@ -302,8 +309,8 @@
                 Get ready for a delicious dinner, we could find some cannolis, great drinks, and maybe some late night anime when we get home! 🍝🥂✨
             </p>
             <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
-                <img src="cannoli.jpg" alt="Cannolis" style="width: 150px; height: 150px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                <img src="bleach-anime.jpg" alt="Bleach Anime" style="width: 150px; height: 150px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                <img src="cannoli.jpg" alt="Cannolis" style="width: 150px; height: 150px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); flex-shrink: 0;">
+                <img src="bleach-anime.jpg" alt="Bleach Anime" style="width: 150px; height: 150px; object-fit: cover; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); flex-shrink: 0;">
             </div>
         </div>
     </div>
